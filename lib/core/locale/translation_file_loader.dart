@@ -26,14 +26,14 @@ class ShabadTranslationFileLoader extends FileTranslationLoader {
     locale = locale ?? await findDeviceLocale();
     MessagePrinter.info('The current locales is $locale');
 
-    return await _loadTranslation('$defaultLocale.json');
+    return await _loadTranslation(defaultLocale);
   }
 
   /// Loads a file into [_decodedMap]. Overrides all keys present in both
   /// [_decodedMap] and file
   Future<Map<String, dynamic>> _loadTranslation(String defaultFile) async {
     try {
-      return await loadFile('${composeFileName()}.json')
+      return await loadFile(composeFileName())
           as Map<String, dynamic>;
     } catch (e) {
       MessagePrinter.debug('Error loading translation $e');

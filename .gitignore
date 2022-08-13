@@ -48,3 +48,10 @@ app.*.map.json
 
 # fvm
 .fvm/flutter_sdk
+
+# Generation
+*.freezed.dart
+*.g.dart
+injection.config.dart
+assets.dart
+jsons.dart
