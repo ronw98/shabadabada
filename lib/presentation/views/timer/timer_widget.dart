@@ -17,6 +17,8 @@ class TimerWidget extends StatefulWidget {
     this.resetFillColor = Colors.blue,
     this.playPauseColor = Colors.white,
     this.resetColor = Colors.white,
+    this.switchFillColor = Colors.blue,
+    this.switchTextStyle,
     this.timerTextStyle,
   }) : super(key: key);
   final int duration;
@@ -26,7 +28,9 @@ class TimerWidget extends StatefulWidget {
   final Color resetFillColor;
   final Color playPauseColor;
   final Color resetColor;
+  final Color switchFillColor;
   final TextStyle? timerTextStyle;
+  final TextStyle? switchTextStyle;
 
   @override
   State<TimerWidget> createState() => _TimerWidgetState();
@@ -75,6 +79,7 @@ class _TimerWidgetState extends State<TimerWidget>
   Widget build(BuildContext context) {
     return Column(
       mainAxisSize: MainAxisSize.min,
+      crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         _TimerDisplay(
           initialValue: widget.duration,
@@ -132,7 +137,42 @@ class _TimerWidgetState extends State<TimerWidget>
               ),
             ),
           ],
-        )
+        ),
+        const SizedBox(height: 4),
+        ValueListenableBuilder<bool>(
+          valueListenable: _controller.isStart,
+          builder: (context, isPlaying, child) {
+            if (!isPlaying) {
+              return child!;
+            }
+            return const NoneWidget();
+          },
+          child: RawMaterialButton(
+            padding: const EdgeInsets.all(4),
+            onPressed: _onSwitchPressed,
+            fillColor: widget.switchFillColor,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(20),
+            ),
+            child: SizedBox(
+              height: 35,
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    'Switch',
+                    style: widget.switchTextStyle ??
+                        const TextStyle(
+                          color: Colors.white,
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
+                        ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ),
       ],
     );
   }
@@ -150,5 +190,11 @@ class _TimerWidgetState extends State<TimerWidget>
       _controller.play();
       _playPauseController.forward();
     }
+  }
+
+  void _onSwitchPressed() {
+    _controller.reset();
+    _controller.play();
+    _playPauseController.forward();
   }
 }
