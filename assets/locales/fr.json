@@ -1,0 +1,16 @@
+{
+  "core": {
+    "app_name": "ShabadApp",
+    "error": "Oups, une erreur est survenue!"
+  },
+  "home": {
+    "quick_game": "Jouer"
+  },
+  "configuration": {
+    "title": "Configuration avancée",
+    "use_timer": "Utiliser un timer"
+  },
+  "deck": {
+    "no_card": "Aucune carte dans la pioche"
+  }
+}

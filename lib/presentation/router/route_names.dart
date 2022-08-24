@@ -1,0 +1,4 @@
+enum RouteNames {
+  home,
+  game
+}

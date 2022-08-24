@@ -1,0 +1,638 @@
+[
+  {
+    "word": "maman, mère",
+    "language": "fr",
+    "color": "white",
+    "category": false
+  },
+  {
+    "word": "papa, père",
+    "language": "fr",
+    "color": "black",
+    "category": false
+  },
+  {
+    "word": "jardin",
+    "language": "fr",
+    "color": "white",
+    "category": false
+  },
+  {
+    "word": "couleur",
+    "language": "fr",
+    "color": "black",
+    "category": false
+  },
+  {
+    "word": "vin",
+    "language": "fr",
+    "color": "white",
+    "category": false
+  },
+  {
+    "word": "eau",
+    "language": "fr",
+    "color": "black",
+    "category": false
+  },
+  {
+    "word": "arbre",
+    "language": "fr",
+    "color": "white",
+    "category": false
+  },
+  {
+    "word": "gueule",
+    "language": "fr",
+    "color": "black",
+    "category": false
+  },
+  {
+    "word": "non",
+    "language": "fr",
+    "color": "white",
+    "category": false
+  },
+  {
+    "word": "oublier",
+    "language": "fr",
+    "color": "black",
+    "category": false
+  },
+  {
+    "word": "fête",
+    "language": "fr",
+    "color": "white",
+    "category": false
+  },
+  {
+    "word": "vent",
+    "language": "fr",
+    "color": "black",
+    "category": false
+  },
+  {
+    "word": "mal",
+    "language": "fr",
+    "color": "white",
+    "category": false
+  },
+  {
+    "word": "fils",
+    "language": "fr",
+    "color": "black",
+    "category": false
+  },
+  {
+    "word": "pays",
+    "language": "fr",
+    "color": "white",
+    "category": false
+  },
+  {
+    "word": "monde",
+    "language": "fr",
+    "color": "black",
+    "category": false
+  },
+  {
+    "word": "toi",
+    "language": "fr",
+    "color": "white",
+    "category": false
+  },
+  {
+    "word": "moi",
+    "language": "fr",
+    "color": "black",
+    "category": false
+  },
+  {
+    "word": "matin",
+    "language": "fr",
+    "color": "white",
+    "category": false
+  },
+  {
+    "word": "soir",
+    "language": "fr",
+    "color": "black",
+    "category": false
+  },
+  {
+    "word": "toujours",
+    "language": "fr",
+    "color": "white",
+    "category": false
+  },
+  {
+    "word": "jamais",
+    "language": "fr",
+    "color": "black",
+    "category": false
+  },
+  {
+    "word": "frère",
+    "language": "fr",
+    "color": "white",
+    "category": false
+  },
+  {
+    "word": "enfant",
+    "language": "fr",
+    "color": "black",
+    "category": false
+  },
+  {
+    "word": "histoire",
+    "language": "fr",
+    "color": "white",
+    "category": false
+  },
+  {
+    "word": "demain",
+    "language": "fr",
+    "color": "black",
+    "category": false
+  },
+  {
+    "word": "ciel",
+    "language": "fr",
+    "color": "white",
+    "category": false
+  },
+  {
+    "word": "coup",
+    "language": "fr",
+    "color": "black",
+    "category": false
+  },
+  {
+    "word": "mort(e)",
+    "language": "fr",
+    "color": "white",
+    "category": false
+  },
+  {
+    "word": "vie",
+    "language": "fr",
+    "color": "black",
+    "category": false
+  },
+  {
+    "word": "garçon",
+    "language": "fr",
+    "color": "white",
+    "category": false
+  },
+  {
+    "word": "fille",
+    "language": "fr",
+    "color": "black",
+    "category": false
+  },
+  {
+    "word": "jour",
+    "language": "fr",
+    "color": "white",
+    "category": false
+  },
+  {
+    "word": "nuit",
+    "language": "fr",
+    "color": "black",
+    "category": false
+  },
+  {
+    "word": "tête",
+    "language": "fr",
+    "color": "white",
+    "category": false
+  },
+  {
+    "word": "bière",
+    "language": "fr",
+    "color": "black",
+    "category": false
+  },
+  {
+    "word": "main",
+    "language": "fr",
+    "color": "white",
+    "category": false
+  },
+  {
+    "word": "pied",
+    "language": "fr",
+    "color": "black",
+    "category": false
+  },
+  {
+    "word": "un nom de vêtement",
+    "language": "fr",
+    "color": "white",
+    "category": true
+  },
+  {
+    "word": "un nom de pays ou de région",
+    "language": "fr",
+    "color": "black",
+    "category": true
+  },
+  {
+    "word": "personne",
+    "language": "fr",
+    "color": "white",
+    "category": false
+  },
+  {
+    "word": "gens",
+    "language": "fr",
+    "color": "black",
+    "category": false
+  },
+  {
+    "word": "blond(e)",
+    "language": "fr",
+    "color": "white",
+    "category": false
+  },
+  {
+    "word": "mai",
+    "language": "fr",
+    "color": "black",
+    "category": false
+  },
+  {
+    "word": "air",
+    "language": "fr",
+    "color": "white",
+    "category": false
+  },
+  {
+    "word": "bois",
+    "language": "fr",
+    "color": "black",
+    "category": false
+  },
+  {
+    "word": "chanteur, chanteuse, chanson",
+    "language": "fr",
+    "color": "white",
+    "category": false
+  },
+  {
+    "word": "jupon",
+    "language": "fr",
+    "color": "black",
+    "category": false
+  },
+  {
+    "word": "larme",
+    "language": "fr",
+    "color": "white",
+    "category": false
+  },
+  {
+    "word": "quitter",
+    "language": "fr",
+    "color": "black",
+    "category": false
+  },
+  {
+    "word": "marin, matelot",
+    "language": "fr",
+    "color": "white",
+    "category": false
+  },
+  {
+    "word": "bateau, navire",
+    "language": "fr",
+    "color": "black",
+    "category": false
+  },
+  {
+    "word": "amour",
+    "language": "fr",
+    "color": "white",
+    "category": false
+  },
+  {
+    "word": "chapeau",
+    "language": "fr",
+    "color": "black",
+    "category": false
+  },
+  {
+    "word": "temps",
+    "language": "fr",
+    "color": "white",
+    "category": false
+  },
+  {
+    "word": "aimer",
+    "language": "fr",
+    "color": "black",
+    "category": false
+  },
+  {
+    "word": "oiseau",
+    "language": "fr",
+    "color": "white",
+    "category": false
+  },
+  {
+    "word": "day",
+    "language": "fr",
+    "color": "black",
+    "category": false
+  },
+  {
+    "word": "bar, café, bistrot",
+    "language": "fr",
+    "color": "white",
+    "category": false
+  },
+  {
+    "word": "bal",
+    "language": "fr",
+    "color": "black",
+    "category": false
+  },
+  {
+    "word": "pleurer",
+    "language": "fr",
+    "color": "white",
+    "category": false
+  },
+  {
+    "word": "boire",
+    "language": "fr",
+    "color": "black",
+    "category": false
+  },
+  {
+    "word": "une année",
+    "language": "fr",
+    "color": "white",
+    "category": true
+  },
+  {
+    "word": "un nom de ville",
+    "language": "fr",
+    "color": "black",
+    "category": true
+  },
+  {
+    "word": "grand(e)",
+    "language": "fr",
+    "color": "white",
+    "category": false
+  },
+  {
+    "word": "petit(e)",
+    "language": "fr",
+    "color": "black",
+    "category": false
+  },
+  {
+    "word": "pauvre",
+    "language": "fr",
+    "color": "white",
+    "category": false
+  },
+  {
+    "word": "heureux, heureuse",
+    "language": "fr",
+    "color": "black",
+    "category": false
+  },
+  {
+    "word": "femme",
+    "language": "fr",
+    "color": "white",
+    "category": false
+  },
+  {
+    "word": "homme",
+    "language": "fr",
+    "color": "black",
+    "category": false
+  },
+  {
+    "word": "chemin",
+    "language": "fr",
+    "color": "white",
+    "category": false
+  },
+  {
+    "word": "rue, route",
+    "language": "fr",
+    "color": "black",
+    "category": false
+  },
+  {
+    "word": "soleil",
+    "language": "fr",
+    "color": "white",
+    "category": false
+  },
+  {
+    "word": "a musical instrument",
+    "language": "fr",
+    "color": "black",
+    "category": true
+  },
+  {
+    "word": "vieux, vieille",
+    "language": "fr",
+    "color": "white",
+    "category": false
+  },
+  {
+    "word": "seul(e)",
+    "language": "fr",
+    "color": "black",
+    "category": false
+  },
+  {
+    "word": "joie",
+    "language": "fr",
+    "color": "white",
+    "category": false
+  },
+  {
+    "word": "pain",
+    "language": "fr",
+    "color": "black",
+    "category": false
+  },
+  {
+    "word": "roi, reine",
+    "language": "fr",
+    "color": "white",
+    "category": false
+  },
+  {
+    "word": "madame, mesdames",
+    "language": "fr",
+    "color": "black",
+    "category": false
+  },
+  {
+    "word": "mer",
+    "language": "fr",
+    "color": "white",
+    "category": false
+  },
+  {
+    "word": "terre",
+    "language": "fr",
+    "color": "black",
+    "category": false
+  },
+  {
+    "word": "ami(e), copain, copine",
+    "language": "fr",
+    "color": "white",
+    "category": false
+  },
+  {
+    "word": "guerre",
+    "language": "fr",
+    "color": "black",
+    "category": false
+  },
+  {
+    "word": "mot",
+    "language": "fr",
+    "color": "white",
+    "category": false
+  },
+  {
+    "word": "triste",
+    "language": "fr",
+    "color": "black",
+    "category": false
+  },
+  {
+    "word": "champ",
+    "language": "fr",
+    "color": "white",
+    "category": false
+  },
+  {
+    "word": "an",
+    "language": "fr",
+    "color": "black",
+    "category": false
+  },
+  {
+    "word": "corps",
+    "language": "fr",
+    "color": "white",
+    "category": false
+  },
+  {
+    "word": "cœur",
+    "language": "fr",
+    "color": "black",
+    "category": false
+  },
+  {
+    "word": "bleu(e)",
+    "language": "fr",
+    "color": "white",
+    "category": false
+  },
+  {
+    "word": "rose",
+    "language": "fr",
+    "color": "black",
+    "category": false
+  },
+  {
+    "word": "printemps",
+    "language": "fr",
+    "color": "white",
+    "category": false
+  },
+  {
+    "word": "été",
+    "language": "fr",
+    "color": "black",
+    "category": false
+  },
+  {
+    "word": "noir(e)",
+    "language": "fr",
+    "color": "white",
+    "category": false
+  },
+  {
+    "word": "blanc, blanche",
+    "language": "fr",
+    "color": "black",
+    "category": false
+  },
+  {
+    "word": "maison",
+    "language": "fr",
+    "color": "white",
+    "category": false
+  },
+  {
+    "word": "rhum",
+    "language": "fr",
+    "color": "black",
+    "category": false
+  },
+  {
+    "word": "beau, belle",
+    "language": "fr",
+    "color": "white",
+    "category": false
+  },
+  {
+    "word": "bras",
+    "language": "fr",
+    "color": "black",
+    "category": false
+  },
+  {
+    "word": "pont",
+    "language": "fr",
+    "color": "white",
+    "category": false
+  },
+  {
+    "word": "fontaine",
+    "language": "fr",
+    "color": "black",
+    "category": false
+  },
+  {
+    "word": "œil, yeux",
+    "language": "fr",
+    "color": "white",
+    "category": false
+  },
+  {
+    "word": "cheveux",
+    "language": "fr",
+    "color": "black",
+    "category": false
+  },
+  {
+    "word": "un prénom féminin",
+    "language": "fr",
+    "color": "white",
+    "category": true
+  },
+  {
+    "word": "un prénom masculin",
+    "language": "fr",
+    "color": "black",
+    "category": true
+  }
+]

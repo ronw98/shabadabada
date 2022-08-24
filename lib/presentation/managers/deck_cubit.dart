@@ -1,6 +1,7 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:injectable/injectable.dart';
+import 'package:shabadabada/domain/entities/available_words.dart';
 import 'package:shabadabada/domain/entities/card.dart';
 import 'package:shabadabada/domain/entities/deck.dart';
 
@@ -10,19 +11,23 @@ part 'deck_cubit.freezed.dart';
 class DeckCubit extends Cubit<DeckState> {
   DeckCubit() : super(const DeckState.initial());
 
-  void loadDeck() {
+  void loadDeck(AvailableWords words) {
     emit(const DeckState.loading());
-
-    const deck = ShabadDeck(
-      cards: [
-        ShabadCard(firstWord: '1', secondWord: '2'),
-        ShabadCard(firstWord: '3', secondWord: '4'),
-        ShabadCard(firstWord: '5', secondWord: '6'),
-        ShabadCard(firstWord: '7', secondWord: '8'),
-        ShabadCard(firstWord: '9', secondWord: '10'),
-      ],
+    final shuffledWords = words.words.values.toList()..shuffle();
+    final deckContent = <ShabadCard>[];
+    for (int i = 0; i < shuffledWords.length - 1; i += 2) {
+      deckContent.add(
+        ShabadCard(
+          firstWord: shuffledWords[i],
+          secondWord: shuffledWords[i + 1],
+        ),
+      );
+    }
+    emit(
+      DeckState.loaded(
+        deck: ShabadDeck(cards: deckContent),
+      ),
     );
-    emit(const DeckState.loaded(deck: deck));
   }
 
   void nextCard() {

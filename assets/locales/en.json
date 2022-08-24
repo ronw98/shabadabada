@@ -1,0 +1,16 @@
+{
+  "core": {
+    "app_name": "WordSing Battle",
+    "error": "Ooops, something bad happened!"
+  },
+  "home": {
+    "quick_game": "Play"
+  },
+  "configuration": {
+    "title": "Advanced game configuration",
+    "use_timer": "Use a timer"
+  },
+  "deck": {
+    "no_card": "No card in the deck"
+  }
+}
