@@ -1,7 +1,7 @@
-import 'dart:math';
-
 import 'package:flutter/material.dart';
 import 'package:shabadabada/domain/entities/card.dart';
+import 'package:shabadabada/presentation/theme/colors.dart';
+import 'package:shabadabada/presentation/views/shabad_card/card_half_background.dart';
 import 'package:shabadabada/presentation/views/shabad_card/card_word.dart';
 import 'package:shabadabada/presentation/widgets/card_shape.dart';
 
@@ -22,25 +22,34 @@ class ShabadCardWidget extends StatelessWidget {
       elevation: elevation,
       child: InkWell(
         onTap: onTap,
-        child: Column(
+        child: Stack(
           children: [
-            Expanded(
-              child: Container(
-                color: Colors.black,
-                child: Center(
-                  child: Transform.rotate(
-                    angle: pi,
-                    child: ShabadCardWord(word: card.firstWord, color: Colors.white),
-                  ),
-                ),
+            const Positioned.fill(
+              child: CardHalfBackground(
+                gradient: ShabadColors.yellowPingGradient,
+                alignment: Alignment.topCenter,
               ),
             ),
-            Expanded(
-              child: Container(
-                color: Colors.white,
-                child: Center(
-                  child: ShabadCardWord(word: card.secondWord, color: Colors.black),
-                ),
+            const Positioned.fill(
+              child: CardHalfBackground(
+                gradient: ShabadColors.blueGradient,
+                alignment: Alignment.bottomCenter,
+              ),
+            ),
+            Positioned.fill(
+              child: ShabadCardWord(
+                word: card.firstWord,
+                gradient: ShabadColors.blueGradient,
+                alignment: Alignment.topCenter,
+                rotate: false,
+              ),
+            ),
+            Positioned.fill(
+              child: ShabadCardWord(
+                word: card.secondWord,
+                gradient: ShabadColors.yellowPingGradient,
+                alignment: Alignment.bottomCenter,
+                rotate: false,
               ),
             ),
           ],

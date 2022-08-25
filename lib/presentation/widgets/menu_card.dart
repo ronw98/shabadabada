@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:shabadabada/assets.dart';
+import 'package:shabadabada/presentation/theme/colors.dart';
 
 class MenuCard extends StatelessWidget {
   const MenuCard({
@@ -22,14 +24,16 @@ class MenuCard extends StatelessWidget {
         child: InkWell(
           onTap: onTap,
           child: Container(
-            color: Colors.black,
+            decoration: const BoxDecoration(
+              gradient: ShabadColors.yellowPingGradient,
+            ),
             child: Center(
               child: Text(
                 label,
-                style: const TextStyle(
-                  color: Colors.white,
+                style: TextStyle(
+                  color: Theme.of(context).colorScheme.onTertiary,
                   fontSize: 30,
-                  fontWeight: FontWeight.bold,
+                  fontFamily: Fonts.berlinSansMedium,
                 ),
               ),
             ),

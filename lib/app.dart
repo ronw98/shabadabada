@@ -24,6 +24,7 @@ class ShabadApp extends StatelessWidget {
         ),
       ],
       child: MaterialApp(
+        debugShowCheckedModeBanner: false,
         supportedLocales: ShabadI18n.supportedLocales,
         localeListResolutionCallback: ShabadI18n.localeListResolutionCallback,
         theme: theme,

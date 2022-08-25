@@ -45,6 +45,17 @@ flutter:
 
   uses-material-design: true
 
+  fonts:
+    - family: BerlinSansRegular
+      fonts:
+        - asset: assets/fonts/BRLNSR.TTF
+    - family: BerlinSansMedium
+      fonts:
+        - asset: assets/fonts/BRLNSM.TTF
+    - family: BerlinSansBold
+      fonts:
+        - asset: assets/fonts/BRLNSB.TTF
+
   assets:
     - assets/locales/
     - assets/words/

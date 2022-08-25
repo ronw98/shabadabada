@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:shabadabada/assets.dart';
 import 'package:shabadabada/jsons.dart';
 import 'package:shabadabada/presentation/extensions/locale_extensions.dart';
+import 'package:shabadabada/presentation/theme/colors.dart';
 import 'package:shabadabada/presentation/widgets/card_shape.dart';
+import 'package:shabadabada/presentation/widgets/gradient_mask_widget.dart';
 
 class NoMoreCardWidget extends StatelessWidget {
   const NoMoreCardWidget({Key? key}) : super(key: key);
@@ -10,14 +13,25 @@ class NoMoreCardWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return ShabadCardShape(
       elevation: 0,
-      child: Center(
-        child: Text(
-          Locales.deck.no_card.translate(context),
-          textAlign: TextAlign.center,
-          style: const TextStyle(
-            fontSize: 25,
-            fontStyle: FontStyle.italic,
-            fontWeight: FontWeight.bold,
+      child: Container(
+        decoration: const BoxDecoration(
+          gradient: ShabadColors.yellowPingGradient,
+        ),
+        child: GradientMaskWidget(
+          gradient: ShabadColors.blueGradient,
+          child: Center(
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Text(
+                Locales.deck.no_card.translate(context),
+                textAlign: TextAlign.center,
+                style: const TextStyle(
+                  fontSize: 30,
+                  fontFamily: Fonts.berlinSansMedium,
+                  fontStyle: FontStyle.italic,
+                ),
+              ),
+            ),
           ),
         ),
       ),

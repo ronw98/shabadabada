@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shabadabada/presentation/theme/colors.dart';
 import 'package:shabadabada/presentation/widgets/card_shape.dart';
 
 class ShabadCardBack extends StatelessWidget {
@@ -9,27 +10,27 @@ class ShabadCardBack extends StatelessWidget {
     return ShabadCardShape(
       child: Container(
         decoration: const BoxDecoration(
-          color: Colors.black,
+          gradient: ShabadColors.yellowPingGradient,
         ),
         child: Center(
           child: Column(
             mainAxisSize: MainAxisSize.min,
             mainAxisAlignment: MainAxisAlignment.center,
-            children: const [
+            children: [
               Text(
                 'Back card placeholder',
                 style: TextStyle(
                   fontSize: 25,
-                  color: Colors.white,
+                  color: Theme.of(context).colorScheme.onTertiary,
                   fontStyle: FontStyle.italic,
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              SizedBox(height: 8),
+              const SizedBox(height: 8),
               Text(
                 'Back card placeholder',
                 style: TextStyle(
-                  color: Colors.white,
+                  color: Theme.of(context).colorScheme.onTertiary,
                   fontStyle: FontStyle.italic,
                   fontWeight: FontWeight.bold,
                 ),
