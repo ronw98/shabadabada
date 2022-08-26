@@ -55,3 +55,6 @@ app.*.map.json
 injection.config.dart
 assets.dart
 jsons.dart
+
+# Design
+misc/source_files
