@@ -1,4 +1,4 @@
-package org.reblochor.shabadabada.shabadabada
+package dev.reblochor.shabadapp
 
 import io.flutter.embedding.android.FlutterActivity
 

@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="org.reblochor.shabadabada.shabadabada">
+    package="dev.reblochor.shabadapp">
    <application
-        android:label="shabadabada"
+        android:label="ShabadApp"
         android:name="${applicationName}"
         android:icon="@mipmap/icon_launcher"
        android:roundIcon="@mipmap/icon_launcher_round"
