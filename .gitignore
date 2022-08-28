@@ -58,3 +58,8 @@ jsons.dart
 
 # Design
 misc/source_files
+
+# Secret
+.gitsecret/keys/random_seed
+certificates/key.properties
+certificates/keystore
