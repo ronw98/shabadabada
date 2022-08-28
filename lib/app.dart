@@ -27,7 +27,9 @@ class ShabadApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         supportedLocales: ShabadI18n.supportedLocales,
         localeListResolutionCallback: ShabadI18n.localeListResolutionCallback,
-        theme: theme,
+        theme: lightTheme,
+        darkTheme: darkTheme,
+        themeMode: ThemeMode.system,
         localizationsDelegates: [
           ShabadI18n.delegate,
           GlobalMaterialLocalizations.delegate,
