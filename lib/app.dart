@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:shabadabada/core/injection.dart';
-import 'package:shabadabada/core/locale/locale_helper.dart';
-import 'package:shabadabada/presentation/managers/deck_cubit.dart';
-import 'package:shabadabada/presentation/managers/words_cubit.dart';
-import 'package:shabadabada/presentation/router/route_names.dart';
-import 'package:shabadabada/presentation/router/router.dart';
-import 'package:shabadabada/presentation/theme/theme.dart';
+import 'package:shabadapp/core/injection.dart';
+import 'package:shabadapp/core/locale/locale_helper.dart';
+import 'package:shabadapp/presentation/managers/deck_cubit.dart';
+import 'package:shabadapp/presentation/managers/words_cubit.dart';
+import 'package:shabadapp/presentation/router/route_names.dart';
+import 'package:shabadapp/presentation/router/router.dart';
+import 'package:shabadapp/presentation/theme/theme.dart';
 
 class ShabadApp extends StatelessWidget {
   const ShabadApp({Key? key}) : super(key: key);

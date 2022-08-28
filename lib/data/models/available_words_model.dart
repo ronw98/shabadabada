@@ -1,5 +1,5 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:shabadabada/data/models/word_model.dart';
+import 'package:shabadapp/data/models/word_model.dart';
 
 part 'available_words_model.freezed.dart';
 

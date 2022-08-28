@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:shabadabada/jsons.dart';
-import 'package:shabadabada/presentation/managers/deck_cubit.dart';
-import 'package:shabadabada/presentation/views/app_bar.dart';
-import 'package:shabadabada/presentation/widgets/deck_widget.dart';
-import 'package:shabadabada/presentation/widgets/none_widget.dart';
+import 'package:shabadapp/jsons.dart';
+import 'package:shabadapp/presentation/managers/deck_cubit.dart';
+import 'package:shabadapp/presentation/views/app_bar.dart';
+import 'package:shabadapp/presentation/widgets/deck_widget.dart';
+import 'package:shabadapp/presentation/widgets/none_widget.dart';
 
 class GamePage extends StatelessWidget {
   const GamePage({Key? key}) : super(key: key);

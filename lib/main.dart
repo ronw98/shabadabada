@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:shabadabada/app.dart';
-import 'package:shabadabada/core/injection.dart';
+import 'package:shabadapp/app.dart';
+import 'package:shabadapp/core/injection.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();

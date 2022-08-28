@@ -3,8 +3,8 @@ import 'dart:convert';
 
 import 'package:flutter/services.dart';
 import 'package:injectable/injectable.dart';
-import 'package:shabadabada/assets.dart';
-import 'package:shabadabada/data/models/available_words_model.dart';
+import 'package:shabadapp/assets.dart';
+import 'package:shabadapp/data/models/available_words_model.dart';
 
 abstract class WordsDataSource {
   Future<AvailableWordsModel> getWords();

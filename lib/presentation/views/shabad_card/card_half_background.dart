@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:shabadabada/presentation/theme/colors.dart';
-import 'package:shabadabada/presentation/widgets/gradient_mask_widget.dart';
+import 'package:shabadapp/presentation/theme/colors.dart';
+import 'package:shabadapp/presentation/widgets/gradient_mask_widget.dart';
 
 class CardHalfBackground extends StatelessWidget {
   const CardHalfBackground({

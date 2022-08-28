@@ -1,5 +1,5 @@
-import 'package:shabadabada/data/models/word_model.dart';
-import 'package:shabadabada/domain/entities/word.dart';
+import 'package:shabadapp/data/models/word_model.dart';
+import 'package:shabadapp/domain/entities/word.dart';
 
 Word wordModelToEntity(WordModel model) => Word(
       word: model.word!,

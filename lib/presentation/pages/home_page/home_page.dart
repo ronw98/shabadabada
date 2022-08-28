@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:shabadabada/jsons.dart';
-import 'package:shabadabada/presentation/extensions/locale_extensions.dart';
-import 'package:shabadabada/presentation/managers/deck_cubit.dart';
-import 'package:shabadabada/presentation/managers/words_cubit.dart';
-import 'package:shabadabada/presentation/router/route_names.dart';
-import 'package:shabadabada/presentation/router/router.dart';
-import 'package:shabadabada/presentation/views/app_bar.dart';
-import 'package:shabadabada/presentation/widgets/error_widget.dart';
-import 'package:shabadabada/presentation/widgets/menu_card.dart';
+import 'package:shabadapp/jsons.dart';
+import 'package:shabadapp/presentation/extensions/locale_extensions.dart';
+import 'package:shabadapp/presentation/managers/deck_cubit.dart';
+import 'package:shabadapp/presentation/managers/words_cubit.dart';
+import 'package:shabadapp/presentation/router/route_names.dart';
+import 'package:shabadapp/presentation/router/router.dart';
+import 'package:shabadapp/presentation/views/app_bar.dart';
+import 'package:shabadapp/presentation/widgets/error_widget.dart';
+import 'package:shabadapp/presentation/widgets/menu_card.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);

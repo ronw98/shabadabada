@@ -2,11 +2,11 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:shabadabada/domain/entities/deck.dart';
-import 'package:shabadabada/presentation/managers/deck_cubit.dart';
-import 'package:shabadabada/presentation/views/shabad_card/card_widget.dart';
-import 'package:shabadabada/presentation/widgets/card_back.dart';
-import 'package:shabadabada/presentation/widgets/no_more_cards_widget.dart';
+import 'package:shabadapp/domain/entities/deck.dart';
+import 'package:shabadapp/presentation/managers/deck_cubit.dart';
+import 'package:shabadapp/presentation/views/shabad_card/card_widget.dart';
+import 'package:shabadapp/presentation/widgets/card_back.dart';
+import 'package:shabadapp/presentation/widgets/no_more_cards_widget.dart';
 
 const maxDeckSize = 5;
 

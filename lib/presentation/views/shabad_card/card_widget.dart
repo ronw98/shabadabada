@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:shabadabada/domain/entities/card.dart';
-import 'package:shabadabada/presentation/theme/colors.dart';
-import 'package:shabadabada/presentation/views/shabad_card/card_half_background.dart';
-import 'package:shabadabada/presentation/views/shabad_card/card_word.dart';
-import 'package:shabadabada/presentation/widgets/card_shape.dart';
+import 'package:shabadapp/domain/entities/card.dart';
+import 'package:shabadapp/presentation/theme/colors.dart';
+import 'package:shabadapp/presentation/views/shabad_card/card_half_background.dart';
+import 'package:shabadapp/presentation/views/shabad_card/card_word.dart';
+import 'package:shabadapp/presentation/widgets/card_shape.dart';
 
 class ShabadCardWidget extends StatelessWidget {
   const ShabadCardWidget({

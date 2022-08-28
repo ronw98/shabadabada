@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:shabadabada/jsons.dart';
-import 'package:shabadabada/presentation/extensions/locale_extensions.dart';
+import 'package:shabadapp/jsons.dart';
+import 'package:shabadapp/presentation/extensions/locale_extensions.dart';
 
 class ErrorPlaceHolderWidget extends StatelessWidget {
   const ErrorPlaceHolderWidget({Key? key}) : super(key: key);

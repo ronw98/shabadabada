@@ -1,8 +1,8 @@
 import 'package:injectable/injectable.dart';
-import 'package:shabadabada/data/adapters/available_words_adapter.dart';
-import 'package:shabadabada/data/datasources/words_datasource.dart';
-import 'package:shabadabada/domain/entities/available_words.dart';
-import 'package:shabadabada/domain/repositories/words_repository.dart';
+import 'package:shabadapp/data/adapters/available_words_adapter.dart';
+import 'package:shabadapp/data/datasources/words_datasource.dart';
+import 'package:shabadapp/domain/entities/available_words.dart';
+import 'package:shabadapp/domain/repositories/words_repository.dart';
 
 @Injectable(as: WordsRepository)
 class WordsRepositoryImpl extends WordsRepository {

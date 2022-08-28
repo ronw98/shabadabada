@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:shabadabada/assets.dart';
-import 'package:shabadabada/presentation/theme/colors.dart';
+import 'package:shabadapp/assets.dart';
+import 'package:shabadapp/presentation/theme/colors.dart';
 
 final theme = ThemeData(
   fontFamily: Fonts.berlinSansRegular,

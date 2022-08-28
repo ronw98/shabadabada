@@ -1,8 +1,8 @@
 import 'dart:async';
 
 import 'package:injectable/injectable.dart';
-import 'package:shabadabada/domain/entities/available_words.dart';
-import 'package:shabadabada/domain/repositories/words_repository.dart';
+import 'package:shabadapp/domain/entities/available_words.dart';
+import 'package:shabadapp/domain/repositories/words_repository.dart';
 
 @injectable
 class GetWords {

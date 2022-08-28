@@ -1,10 +1,10 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:shabadabada/assets.dart';
-import 'package:shabadabada/domain/entities/word.dart';
-import 'package:shabadabada/presentation/extensions/string_utils.dart';
-import 'package:shabadabada/presentation/widgets/gradient_mask_widget.dart';
+import 'package:shabadapp/assets.dart';
+import 'package:shabadapp/domain/entities/word.dart';
+import 'package:shabadapp/presentation/extensions/string_utils.dart';
+import 'package:shabadapp/presentation/widgets/gradient_mask_widget.dart';
 
 class ShabadCardWord extends StatelessWidget {
   const ShabadCardWord({

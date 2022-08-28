@@ -4,7 +4,7 @@ import 'package:flutter_i18n/flutter_i18n.dart';
 import 'package:flutter_i18n/loaders/decoders/json_decode_strategy.dart';
 import 'package:intl/intl.dart';
 import 'package:logger/logger.dart';
-import 'package:shabadabada/core/locale/translation_file_loader.dart';
+import 'package:shabadapp/core/locale/translation_file_loader.dart';
 
 mixin ShabadI18n {
   static Iterable<Locale> get supportedLocales => const [

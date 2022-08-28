@@ -1,8 +1,8 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:injectable/injectable.dart';
-import 'package:shabadabada/domain/entities/available_words.dart';
-import 'package:shabadabada/domain/usecases/get_words.dart';
+import 'package:shabadapp/domain/entities/available_words.dart';
+import 'package:shabadapp/domain/usecases/get_words.dart';
 
 part 'words_cubit.freezed.dart';
 

@@ -1,9 +1,9 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:injectable/injectable.dart';
-import 'package:shabadabada/domain/entities/available_words.dart';
-import 'package:shabadabada/domain/entities/card.dart';
-import 'package:shabadabada/domain/entities/deck.dart';
+import 'package:shabadapp/domain/entities/available_words.dart';
+import 'package:shabadapp/domain/entities/card.dart';
+import 'package:shabadapp/domain/entities/deck.dart';
 
 part 'deck_cubit.freezed.dart';
 

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:shabadabada/presentation/theme/colors.dart';
-import 'package:shabadabada/presentation/widgets/card_shape.dart';
+import 'package:shabadapp/presentation/theme/colors.dart';
+import 'package:shabadapp/presentation/widgets/card_shape.dart';
 
 class ShabadCardBack extends StatelessWidget {
   const ShabadCardBack({Key? key}) : super(key: key);

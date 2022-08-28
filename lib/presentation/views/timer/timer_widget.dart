@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:multi_value_listenable_builder/multi_value_listenable_builder.dart';
-import 'package:shabadabada/presentation/widgets/none_widget.dart';
+import 'package:shabadapp/presentation/widgets/none_widget.dart';
 
 part 'timer_text.dart';
 

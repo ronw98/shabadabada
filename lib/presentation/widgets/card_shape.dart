@@ -16,7 +16,7 @@ class ShabadCardShape extends StatelessWidget {
       child: Card(
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(20),
-          side:const BorderSide(color: Colors.grey),
+          // side:const BorderSide(color: Colors.grey),
         ),
         clipBehavior: Clip.antiAlias,
         elevation: elevation,

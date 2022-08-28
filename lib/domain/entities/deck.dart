@@ -1,6 +1,6 @@
 import 'package:collection/collection.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:shabadabada/domain/entities/card.dart';
+import 'package:shabadapp/domain/entities/card.dart';
 
 part 'deck.freezed.dart';
 
