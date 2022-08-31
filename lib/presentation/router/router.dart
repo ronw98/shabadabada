@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:shabadapp/core/injection.dart';
 import 'package:shabadapp/presentation/pages/game_page/game_page.dart';
 import 'package:shabadapp/presentation/pages/home_page/home_page.dart';
+import 'package:shabadapp/presentation/pages/privacy_policy/privacy_policy_page.dart';
+import 'package:shabadapp/presentation/pages/settings/settings_page.dart';
 import 'package:shabadapp/presentation/router/route_names.dart';
 
 goTo(RouteNames route) {
@@ -22,5 +24,9 @@ Route? generateRoute(RouteSettings settings) {
       return MaterialPageRoute(builder: (context) => const HomePage());
     case RouteNames.game:
       return MaterialPageRoute(builder: (context) => const GamePage());
+    case RouteNames.settings:
+      return MaterialPageRoute(builder: (context) => const SettingsPage());
+    case RouteNames.privacy:
+      return MaterialPageRoute(builder: (context) => const PrivacyPolicyPage());
   }
 }

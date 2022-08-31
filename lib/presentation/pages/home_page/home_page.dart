@@ -16,7 +16,15 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: ShabadAppBar(translationKey: Locales.core.app_name),
+      appBar: ShabadAppBar(
+        translationKey: Locales.core.app_name,
+        actions: [
+          IconButton(
+            onPressed: () => goTo(RouteNames.settings),
+            icon: const Icon(Icons.music_note),
+          ),
+        ],
+      ),
       body: BlocBuilder<WordsCubit, WordsState>(
         buildWhen: (previous, next) => previous.runtimeType != next.runtimeType,
         builder: (context, state) {
@@ -25,8 +33,7 @@ class HomePage extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 MenuCard(
-                  label:
-                  Locales.home.quick_game.translate(context),
+                  label: Locales.home.quick_game.translate(context),
                   onTap: () {
                     BlocProvider.of<DeckCubit>(context).loadDeck(words);
                     goTo(RouteNames.game);

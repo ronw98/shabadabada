@@ -6,8 +6,10 @@ class ShabadAppBar extends StatelessWidget with PreferredSizeWidget {
   const ShabadAppBar({
     Key? key,
     required this.translationKey,
+    this.actions = const [],
   }) : super(key: key);
   final String translationKey;
+  final List<Widget> actions;
 
   @override
   Widget build(BuildContext context) {
@@ -15,6 +17,7 @@ class ShabadAppBar extends StatelessWidget with PreferredSizeWidget {
       title: Text(
         translationKey.translate(context),
       ),
+      actions: actions,
     );
   }
 

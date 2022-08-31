@@ -1,4 +1,6 @@
 enum RouteNames {
   home,
-  game
+  game,
+  settings,
+  privacy,
 }

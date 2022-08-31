@@ -1,16 +1,28 @@
 {
-  "core": {
-    "app_name": "ShabadApp",
-    "error": "Oups, une erreur est survenue!"
-  },
-  "home": {
-    "quick_game": "Jouer"
-  },
   "configuration": {
     "title": "Configuration avancée",
     "use_timer": "Utiliser un timer"
   },
+  "core": {
+    "app_name": "ShabadApp",
+    "error": "Oups, une erreur est survenue!"
+  },
   "deck": {
     "no_card": "Aucune carte dans la pioche"
+  },
+  "home": {
+    "quick_game": "Jouer"
+  },
+  "privacy": {
+    "body": "L'application ne collecte ni n'accède à aucune donnée utilisateur.\n\nElle affiche simplement un paquet de carte, chaque carte affichant deux mots. C'est tout.",
+    "title": "Politique de confidentialité"
+  },
+  "settings": {
+    "credits": {
+      "body": "Un grand merci à Moutonus et Machiavel pour leur aide sur les graphismes et la liste de mots !",
+      "title": "Crédits"
+    },
+    "privacy": "Politique de confidentialité",
+    "title": "Paramètres"
   }
 }

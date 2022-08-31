@@ -1,16 +1,28 @@
 {
-  "core": {
-    "app_name": "WordSing Battle",
-    "error": "Ooops, something bad happened!"
-  },
-  "home": {
-    "quick_game": "Play"
-  },
   "configuration": {
     "title": "Advanced game configuration",
     "use_timer": "Use a timer"
   },
+  "core": {
+    "app_name": "WordSing Battle",
+    "error": "Ooops, something bad happened!"
+  },
   "deck": {
     "no_card": "No card in the deck"
+  },
+  "home": {
+    "quick_game": "Play"
+  },
+  "privacy": {
+    "body": "The app doesn't collect nor access any type of user's related data.\n\nI mean it really just shows a list of words for you to sing.\n\nThat's it, have a good day.",
+    "title": "Privacy policy"
+  },
+  "settings": {
+    "credits": {
+      "body": "A huge thanks to Moutonus and Machiavel for helping me with graphic assets and the wordlist",
+      "title": "Credits"
+    },
+    "privacy": "Privacy policy",
+    "title": "Settings"
   }
 }
