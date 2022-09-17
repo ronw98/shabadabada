@@ -2,49 +2,52 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:injectable/injectable.dart';
 import 'package:shabadapp/domain/entities/available_words.dart';
-import 'package:shabadapp/domain/entities/card.dart';
 import 'package:shabadapp/domain/entities/deck.dart';
+import 'package:shabadapp/domain/usecases/build_deck_from_words.dart';
 
 part 'deck_cubit.freezed.dart';
 
 @lazySingleton
 class DeckCubit extends Cubit<DeckState> {
-  DeckCubit() : super(const DeckState.initial());
+  DeckCubit(BuildDeckFromWords buildDeckFromWords)
+      : _buildDeckFromWords = buildDeckFromWords,
+        super(const DeckState.initial());
+
+  final BuildDeckFromWords _buildDeckFromWords;
 
   void loadDeck(AvailableWords words) {
     emit(const DeckState.loading());
-    final shuffledWords = words.words.values.toList()..shuffle();
-    final deckContent = <ShabadCard>[];
-    for (int i = 0; i < shuffledWords.length - 1; i += 2) {
-      deckContent.add(
-        ShabadCard(
-          firstWord: shuffledWords[i],
-          secondWord: shuffledWords[i + 1],
-        ),
-      );
-    }
+    final deck = _buildDeckFromWords(words);
     emit(
       DeckState.loaded(
-        deck: ShabadDeck(cards: deckContent),
+        deck: deck,
       ),
     );
   }
 
   void nextCard() {
-    state.whenOrNull(
-      loaded: (previousDeck) {
+    state.mapOrNull(
+      loaded: (loadedState) {
+        if (loadedState.deckFinished) {
+          return;
+        }
         emit(
           DeckState.loaded(
-            deck: previousDeck.size == 1
-                ? ShabadDeck.empty
-                : previousDeck.copyWith(
-                    cards: previousDeck.cards.sublist(
-                      0,
-                      previousDeck.size - 1,
-                    ),
-                  ),
+            deck: loadedState.deck,
+            index: loadedState.index + 1,
           ),
         );
+      },
+    );
+  }
+
+  void previousCard() {
+    state.whenOrNull(
+      loaded: (deck, index) {
+        if (index == 0) {
+          return;
+        }
+        emit(DeckState.loaded(deck: deck, index: index - 1));
       },
     );
   }
@@ -52,11 +55,21 @@ class DeckCubit extends Cubit<DeckState> {
 
 @freezed
 class DeckState with _$DeckState {
+  const DeckState._();
+
   const factory DeckState.initial() = _DeckInitial;
 
-  const factory DeckState.loaded({required ShabadDeck deck}) = _DeckLoaded;
+  const factory DeckState.loaded({
+    required ShabadDeck deck,
+    @Default(0) int index,
+  }) = _DeckLoaded;
 
   const factory DeckState.error() = _DeckError;
 
   const factory DeckState.loading() = _DeckLoading;
+
+  bool get deckFinished => maybeWhen(
+        loaded: (deck, index) => deck.size == index,
+        orElse: () => throw Exception('Deck is not loaded'),
+      );
 }

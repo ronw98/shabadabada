@@ -5,6 +5,7 @@ import 'package:flutter/services.dart';
 import 'package:injectable/injectable.dart';
 import 'package:shabadapp/assets.dart';
 import 'package:shabadapp/data/models/available_words_model.dart';
+import 'package:shabadapp/domain/entities/word.dart';
 
 abstract class WordsDataSource {
   Future<AvailableWordsModel> getWords();
@@ -19,21 +20,27 @@ class WordsLocalDataSourceImpl extends WordsDataSource {
 
     final AvailableWordsModel englishModel = AvailableWordsModel.fromJson(
       {
-        'words': jsonDecode(englishWords),
+        'wordsByLang': {
+          Language.en.name: jsonDecode(englishWords),
+        },
       },
     );
 
     final AvailableWordsModel frenchModel = AvailableWordsModel.fromJson(
       {
-        'words': jsonDecode(frenchWords),
+        'wordsByLang': {
+          Language.fr.name: jsonDecode(frenchWords),
+        },
       },
     );
 
     return AvailableWordsModel(
-      words: [
-        ...englishModel.words ?? [],
-        ...frenchModel.words ?? [],
-      ],
+      wordsByLang: {
+        if (englishModel.wordsByLang?.isNotEmpty ?? false)
+          ...englishModel.wordsByLang!,
+        if (frenchModel.wordsByLang?.isNotEmpty ?? false)
+          ...frenchModel.wordsByLang!,
+      },
     );
   }
 }

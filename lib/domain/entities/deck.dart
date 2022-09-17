@@ -18,6 +18,8 @@ class ShabadDeck with _$ShabadDeck {
 
   ShabadCard get top => cards.last;
 
+  ShabadCard fromTop(int index) => cards[cards.length-index-1];
+
   int get size => cards.length;
 
   bool get isEmpty => cards.isEmpty;

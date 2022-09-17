@@ -15,7 +15,7 @@ class NoMoreCardWidget extends StatelessWidget {
       elevation: 0,
       child: Container(
         decoration: const BoxDecoration(
-          gradient: ShabadColors.yellowPingGradient,
+          gradient: ShabadColors.yellowPinkGradient,
         ),
         child: GradientMaskWidget(
           gradient: ShabadColors.blueGradient,

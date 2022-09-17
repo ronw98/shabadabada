@@ -18,9 +18,11 @@ class GamePage extends StatelessWidget {
         child: SizedBox(
           width: width,
           child: BlocBuilder<DeckCubit, DeckState>(
+            buildWhen: (previous, next) =>
+                previous.runtimeType != next.runtimeType,
             builder: (context, state) {
-              return state.maybeWhen(
-                loaded: (deck) => ShabadDeckWidget(deck: deck),
+              return state.maybeMap(
+                loaded: (_) => const ShabadDeckWidget(),
                 orElse: () => const NoneWidget(),
               );
             },

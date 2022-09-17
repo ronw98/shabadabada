@@ -6,6 +6,6 @@ part 'available_words.freezed.dart';
 @freezed
 class AvailableWords with _$AvailableWords {
   const factory AvailableWords({
-    required Map<String, Word> words,
+    required Map<Language, List<Word>> wordsByLang,
   }) = _AvailableWords;
 }

@@ -10,7 +10,7 @@ class ShabadCardBack extends StatelessWidget {
     return ShabadCardShape(
       child: Container(
         decoration: const BoxDecoration(
-          gradient: ShabadColors.yellowPingGradient,
+          gradient: ShabadColors.yellowPinkGradient,
         ),
         child: Center(
           child: Column(

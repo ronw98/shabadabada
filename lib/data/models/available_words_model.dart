@@ -8,7 +8,7 @@ part 'available_words_model.g.dart';
 @freezed
 class AvailableWordsModel with _$AvailableWordsModel {
   const factory AvailableWordsModel({
-    List<WordModel>? words,
+    Map<String, List<WordModel>>? wordsByLang,
   }) = _AvailableWordsModel;
 
   factory AvailableWordsModel.fromJson(Map<String, dynamic> json) =>

@@ -1,11 +1,7 @@
-import 'dart:math';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:shabadapp/domain/entities/deck.dart';
 import 'package:shabadapp/presentation/managers/deck_cubit.dart';
-import 'package:shabadapp/presentation/views/shabad_card/card_widget.dart';
-import 'package:shabadapp/presentation/widgets/card_back.dart';
+import 'package:shabadapp/presentation/views/shabad_card/shabad_card_wrapper.dart';
 import 'package:shabadapp/presentation/widgets/no_more_cards_widget.dart';
 
 const maxDeckSize = 5;
@@ -15,25 +11,25 @@ const maxDeckSize = 5;
 class ShabadDeckWidget extends StatelessWidget {
   const ShabadDeckWidget({
     Key? key,
-    required this.deck,
   }) : super(key: key);
-  final ShabadDeck deck;
-
-  Widget get hiddenCard => const ShabadCardBack();
-
-  int get displaySize => min(deck.size, maxDeckSize);
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(top: 12),
-      child: deck.isEmpty
-          ? const NoMoreCardWidget()
-          : ShabadCardWidget(
-              elevation: deck.size.toDouble(),
-              card: deck.top,
-              onTap: () => BlocProvider.of<DeckCubit>(context).nextCard(),
-            ),
+    return BlocSelector<DeckCubit, DeckState, bool>(
+      selector: (state) {
+        return state.maybeMap(
+          loaded: (value) => value.deckFinished,
+          orElse: () => false,
+        );
+      },
+      builder: (context, deckFinished) {
+        return Padding(
+          padding: const EdgeInsets.only(top: 12),
+          child: deckFinished
+              ? const NoMoreCardWidget()
+              : const ShabadCardWrapper(),
+        );
+      },
     );
   }
 }

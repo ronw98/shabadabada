@@ -11,7 +11,7 @@ class ShabadColors {
   static const lightBlue = Color(0xFF3A6E91);
   static const darkBlue = Color(0xFF003655);
 
-  static const yellowPingGradient = LinearGradient(
+  static const yellowPinkGradient = LinearGradient(
     colors: [tertiaryYellow, secondaryPink],
     begin: Alignment.topCenter,
     end: Alignment.bottomRight,

@@ -25,7 +25,7 @@ class MenuCard extends StatelessWidget {
           onTap: onTap,
           child: Container(
             decoration: const BoxDecoration(
-              gradient: ShabadColors.yellowPingGradient,
+              gradient: ShabadColors.yellowPinkGradient,
             ),
             child: Center(
               child: Text(

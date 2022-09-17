@@ -22,13 +22,12 @@ E? modelToEntity<E, M>(M? model, EntityConverter<E, M> converter) {
 
 /// Converts a list of models to a list of non nullable entities,
 /// ignoring invalid models
-List<E> modelEntityListConverter<E, M>(
+List<E>? modelEntityListConverter<E, M>(
   Iterable<dynamic>? models,
   EntityConverter<E, M> converter,
 ) {
   return models
           ?.map((model) => modelToEntity<E, M>(model, converter))
           .whereType<E>()
-          .toList(growable: true) ??
-      [];
+          .toList(growable: true);
 }
