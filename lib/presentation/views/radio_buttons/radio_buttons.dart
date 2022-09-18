@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:shabadapp/assets.dart';
+import 'package:shabadapp/presentation/theme/button_style.dart';
 import 'package:shabadapp/presentation/theme/colors.dart';
-import 'package:shabadapp/presentation/widgets/card_label.dart';
-import 'package:shabadapp/presentation/widgets/card_shape.dart';
-import 'package:shabadapp/presentation/widgets/gradient_mask_widget.dart';
+import 'package:shabadapp/presentation/widgets/shabad_button.dart';
 
 class RadioButtons<T> extends StatelessWidget {
   const RadioButtons({
@@ -32,32 +31,19 @@ class RadioButtons<T> extends StatelessWidget {
               : ShabadColors.yellowPinkGradient;
           return FractionallySizedBox(
             widthFactor: 0.4,
-            child: ShabadCardShape(
-              aspectRatio: 15 / 9,
-              child: InkWell(
-                onTap: () => onItemTap(option),
-                child: Stack(
-                  children: [
-                    Positioned.fill(
-                      child: GradientMaskWidget(
-                        gradient: backgroundGradient,
-                        child: Container(
-                          color: Colors.white,
-                        ),
-                      ),
-                    ),
-                    Positioned.fill(
-                      child: ShabadCardLabel(
-                        label: itemToString(option),
-                        gradient: textGradient,
-                        alignment: Alignment.center,
-                        style: const TextStyle(
-                          fontFamily: Fonts.berlinSansRegular,
-                          fontSize: 20,
-                        ),
-                      ),
-                    ),
-                  ],
+            child: ShabadButton(
+              style: ShabadButtonStyle(
+                textGradient: textGradient,
+                backgroundGradient: backgroundGradient,
+              ),
+              onTap: () => onItemTap(option),
+              child: Center(
+                child: Text(
+                  itemToString(option),
+                  style: const TextStyle(
+                    fontFamily: Fonts.berlinSansRegular,
+                    fontSize: 20,
+                  ),
                 ),
               ),
             ),

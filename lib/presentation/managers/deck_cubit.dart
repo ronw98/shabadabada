@@ -4,6 +4,7 @@ import 'package:injectable/injectable.dart';
 import 'package:shabadapp/domain/entities/available_words.dart';
 import 'package:shabadapp/domain/entities/deck.dart';
 import 'package:shabadapp/domain/usecases/build_deck_from_words.dart';
+import 'package:shabadapp/presentation/exceptions/deck_exception.dart';
 
 part 'deck_cubit.freezed.dart';
 
@@ -51,6 +52,8 @@ class DeckCubit extends Cubit<DeckState> {
       },
     );
   }
+
+  void restart(AvailableWords words) => loadDeck(words);
 }
 
 @freezed
@@ -70,6 +73,16 @@ class DeckState with _$DeckState {
 
   bool get deckFinished => maybeWhen(
         loaded: (deck, index) => deck.size == index,
-        orElse: () => throw Exception('Deck is not loaded'),
+        orElse: () => throw DeckException('Deck is not loaded'),
+      );
+
+  bool get canGoBack => maybeWhen(
+        loaded: (_, index) => index > 0,
+        orElse: () => throw DeckException('Deck is not loaded'),
+      );
+
+  bool get hasNext => maybeWhen(
+        loaded: (deck, index) => index < deck.size,
+        orElse: () => throw DeckException('Deck is not loaded'),
       );
 }

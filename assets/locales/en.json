@@ -6,9 +6,21 @@
   "core": {
     "app_name": "WordSing Battle",
     "error": "Ooops, something bad happened!"
+    ,
+    "next": "Next",
+    "previous": "Previous",
+    "confirm": "OK",
+    "cancel": "Cancel"
   },
   "deck": {
-    "no_card": "No card in the deck"
+    "no_card": "No card in the deck",
+    "reset": {
+      "title": "Reset and restart?",
+      "body": "Do you want to re-shuffle the deck and restart the game?",
+      "error": "Error while restarting game, restart the application",
+      "success": "The game has been reset!"
+
+    }
   },
   "home": {
     "quick_game": "Play"

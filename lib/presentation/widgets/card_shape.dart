@@ -5,26 +5,31 @@ class ShabadCardShape extends StatelessWidget {
     Key? key,
     required this.child,
     this.elevation = 4,
-    this.aspectRatio = 9/15,
+    this.aspectRatio,
 
   }) : super(key: key);
   final Widget child;
   final double elevation;
-  final double aspectRatio;
+  final double? aspectRatio;
 
   @override
   Widget build(BuildContext context) {
-    return AspectRatio(
-      aspectRatio: aspectRatio,
-      child: Card(
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(20),
-          // side:const BorderSide(color: Colors.grey),
-        ),
-        clipBehavior: Clip.antiAlias,
-        elevation: elevation,
-        child: child,
+    final widget = Card(
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(20),
+        // side:const BorderSide(color: Colors.grey),
       ),
+      color: Colors.transparent,
+      clipBehavior: Clip.antiAlias,
+      elevation: elevation,
+      child: child,
+    );
+    if(aspectRatio == null) {
+      return widget;
+    }
+    return AspectRatio(
+      aspectRatio: aspectRatio!,
+      child: widget,
     );
   }
 }

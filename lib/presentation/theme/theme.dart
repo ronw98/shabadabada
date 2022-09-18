@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:shabadapp/assets.dart';
+import 'package:shabadapp/presentation/theme/button_style.dart';
 import 'package:shabadapp/presentation/theme/colors.dart';
+import 'package:shabadapp/presentation/theme/dialog_theme.dart';
 
 const textTheme = TextTheme(
   bodyLarge: TextStyle(fontSize: 18),
@@ -18,6 +20,16 @@ final lightTheme = ThemeData(
     onTertiary: ShabadColors.primaryBlue,
   ),
   textTheme: textTheme,
+  extensions: [
+    ShabadDialogTheme(
+      backgroundGradient: ShabadColors.yellowPinkGradient,
+      textGradient: ShabadColors.blueGradient,
+    ),
+    ShabadButtonStyle(
+        backgroundGradient: ShabadColors.noGradient,
+        textGradient: ShabadColors.blueGradient
+    ),
+  ],
 );
 
 final darkTheme = ThemeData(
@@ -33,4 +45,14 @@ final darkTheme = ThemeData(
     onTertiary: ShabadColors.primaryBlue,
   ),
   textTheme: textTheme,
+  extensions: [
+    ShabadDialogTheme(
+      backgroundGradient: ShabadColors.blueGradient,
+      textGradient: ShabadColors.yellowPinkGradient,
+    ),
+    ShabadButtonStyle(
+      backgroundGradient: ShabadColors.noGradient,
+      textGradient: ShabadColors.yellowPinkGradient
+    ),
+  ],
 );

@@ -5,10 +5,21 @@
   },
   "core": {
     "app_name": "ShabadApp",
-    "error": "Oups, une erreur est survenue!"
+    "error": "Oups, une erreur est survenue!",
+    "next": "Suivante",
+    "previous": "Précédente",
+    "confirm": "OK",
+    "cancel": "Annuler"
   },
   "deck": {
-    "no_card": "Aucune carte dans la pioche"
+    "no_card": "Aucune carte dans la pioche",
+    "reset": {
+      "title": "Recommencer?",
+      "body": "Voulez-vous mélanger les cartes et recommencer une partie?",
+      "error": "Erreur lors de redémarrage, relancez l'application",
+      "success": "La partie a été redémarrée!"
+
+    }
   },
   "home": {
     "quick_game": "Jouer"

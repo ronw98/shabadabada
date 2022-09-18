@@ -47,6 +47,7 @@ class _ShabadCardWrapperState extends State<ShabadCardWrapper> {
                   word: card.wordByLang[selectedLanguage]!,
                   onTap: () => BlocProvider.of<DeckCubit>(context).nextCard(),
                 ),
+                const SizedBox(height: 8),
                 RadioButtons<Language>(
                   selected: selectedLanguage,
                   options: card.wordByLang.entries

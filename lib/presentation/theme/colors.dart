@@ -22,4 +22,11 @@ class ShabadColors {
     begin: Alignment.topLeft,
     end: Alignment.bottomRight,
   );
+
+  static const noGradient = LinearGradient(
+    colors: [
+      Colors.transparent,
+      Colors.transparent,
+    ],
+  );
 }
