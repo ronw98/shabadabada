@@ -15,8 +15,8 @@ class RadioButtons<T> extends StatelessWidget {
 
   final List<T> options;
   final String Function(T item) itemToString;
-  final Function(T choice) onItemTap;
-  final T selected;
+  final Function(T? choice) onItemTap;
+  final T? selected;
 
   @override
   Widget build(BuildContext context) {
@@ -36,7 +36,7 @@ class RadioButtons<T> extends StatelessWidget {
                 textGradient: textGradient,
                 backgroundGradient: backgroundGradient,
               ),
-              onTap: () => onItemTap(option),
+              onTap: () => option==selected?onItemTap(null):onItemTap(option),
               child: Center(
                 child: Text(
                   itemToString(option),

@@ -5,8 +5,8 @@ import 'package:shabadapp/presentation/views/shabad_card/card_word.dart';
 import 'package:shabadapp/presentation/widgets/card_shape.dart';
 import 'package:shabadapp/presentation/widgets/gradient_mask_widget.dart';
 
-class ShabadCardWidget extends StatelessWidget {
-  const ShabadCardWidget({
+class ShabadCardSingleWidget extends StatelessWidget {
+  const ShabadCardSingleWidget({
     Key? key,
     required this.word,
     this.elevation = 4,
